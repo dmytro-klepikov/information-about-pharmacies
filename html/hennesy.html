@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spirtov</title>
+    <link rel="icon" href="../image/icon/favicon.PNG">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body class="page">
+    <div class="wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__container">
+                        <div class="logo">
+                            <a href="../index.html">
+                            <img 
+                              class="logo__image"
+                              src="../image/logo.png" 
+                              alt="Spirtov">
+                             </a> 
+                        </div>
+        
+                           <nav class="menu">
+                              <ul class="menu__list">
+                                 <li class="menu__item">
+                                       <a href="../catalog.html" class="menu__link">Каталог</a>
+                                 </li>
+
+                                 <li class="menu__item">
+                                       <a href="#delivery" class="menu__link">Доставка</a>
+                                 </li>
+
+                                 <li class="menu__item">
+                                       <a href="#contacts" class="menu__link">Контакти</a>
+                                 </li>
+                              </ul>
+                           </nav>     
+                           
+                     
+                           <div class="header__actions">
+                              <div class="actions-header cart-header">
+                                    <a class="cart-header__icon icon-cart" href="#">
+                                       <img class="icon-cart__item" src="../image/icon/purchase.png" alt="Корзина">
+                                       <span id="cart-count" class="icon-cart__numb"></span>
+                                 </a>
+                                 <div class="cart-header__body">
+                                       <ul class="cart-header__list cart-list"></ul>
+                                 </div>
+                              </div>
+
+                              <div class="menu__burger" id="menu__burger">
+                                 <span></span>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+    <main class="main">
+        <section class="content">
+            <div class="container">
+                <h1 class="title content__title">
+                    Детальніше про товар
+                </h1>
+
+                <div class="content__container" data-id="9" data-pid="9" >
+                    <h2 class="content__subtitle">
+                        Hennesy
+                    </h2>
+
+                    <div class="content__body">
+                        <img class="content__image" src="../image/products/elitka/hennesy.png" alt="Hennesy" class="content__image">
+                        <p class="content__text">
+                           Коньяк Hennessy: символ розкоші та престижу. Для багатьох людей коньяк Hennessy асоціюється 
+                           з розкішшю та успіхом — і це зовсім не випадково! Hennessy — це культовий напій, 
+                           який обирають заможні та успішні люди. Якщо ви купуєте коньяк Hennessy об'ємом 3 літри, 
+                           можливо, вам цікаво дізнатися про його вишукану історію, яка триває майже 300 років.
+                           Коньячний дім Hennessy був заснований у 1765 році в провінції Коньяк, Франція. Його 
+                           назвали на честь засновника Річарда Хеннессі, який після завершення військової кар’єри вирішив 
+                           присвятити себе виноробству. З моменту свого заснування Hennessy був орієнтований на вищий світ. 
+                           Виробники прагнули пов’язати свій напій із розкішшю, владою та багатством. Вони зробили все, 
+                           щоб їхній коньяк потрапив до королівських дворів. І невдовзі жодне світське свято не обходилося 
+                           без Hennessy. Сьогодні Hennessy продовжує супроводжувати найважливіші події
+                        </p>
+                    </div>
+                    <div class="content__footer">
+                        <div class="content__price">
+                            <p class="content__price--name">Ціна:</p>
+                            <p class="content__price--price">240 грн.</p>
+                        </div>
+
+                        <button class="button button--primary add-to-cart content__button">Додати в кошик</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+            <div class="container">
+                <section class="about">
+                    <div class="about__container">
+                        <div class="about__delivery">
+                            <div class="about__item">
+                                <h3 class="about__subtittle">Доставка</h3>
+                                <p class="about__text">
+                                    Доставка замовлень здійснюється будь-яким зручним для вас 
+                                    способом: - транспортними компаніями НОВА ПОШТА, DELIVERY, 
+                                    SAT (за індивідуальними корпоративними тарифами) та кур'єром 
+                                    по місту. Відправлення товару в день замовлення 
+                                    (якщо замовлення було оформлене до 16:00)
+                                </p>
+                            </div>
+
+                            <div class="about__item">
+                                <h3 class="about__subtittle">Оплата</h3>
+                                <p class="about__text">
+                                    Оплата замовлень здійснюється двома способами
+                                </p>
+                                <p class="about__text">
+                                    1. Оплата при отриманні (накладний платіж за тарифами транспортної компанії) 
+                                </p>
+                                <p class="about__text">
+                                    2. Безготівкова оплата на карту чи рахунок (банківську комісію сплачує отримувач)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about__delivery">
+                            <div class="about__item about__item--social">
+                                <h3 class="about__subtittle">Контакти</h3>
+                                <div class="about__social">
+                                    <div class="call">
+                                        <a 
+                                        href="tel:+1 234 555-55-55" 
+                                        class="icon icon__about"
+                                        >
+                                        <img class="icon__about" src="../image/icon/phone-ringing.png" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="instagram">
+                                        <a 
+                                        href="https://www.instagram.com" 
+                                        class="icon icon__about"
+                                        >
+                                        <img class="icon__about" src="../image/icon/instagram.png" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="telegram">
+                                        <a 
+                                        href="https://t.me/+xn-v9mnxZog4ZDYy" 
+                                        class="icon icon__about"
+                                        >
+                                        <img class="icon__about" src="../image/icon/telegram.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </div>
+    <script src="../script/main.js"></script>
+</body>
+</html>

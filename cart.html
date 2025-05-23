@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик | Spirtov</title>
+    <link rel="icon" href="./image/icon/favicon.PNG">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/blocks/cart.css">
+</head>
+<body class="page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img class="logo__image" src="./image/logo.png" alt="Spirtov">
+                        </a>
+                    </div>
+    
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="./catalog.html" class="menu__link">Каталог</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Переваги</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Доставка</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Гарантія</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>     
+                    
+                    <div class="header__actions">
+                        <div class="menu__burger" id="menu__burger">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <h1 class="cart-page-title">Кошик</h1>
+                <div class="cart-page">
+                    <div class="cart-page__items" id="cart-items-container">
+                        <!-- Cart items will be displayed here -->
+                    </div>
+                    <div class="cart-page__summary">
+                        <div class="cart-page__total">
+                            <span>Загальна сума:</span>
+                            <span id="cart-total-amount">0 грн</span>
+                        </div>
+                        <div class="cart__form form__container cart-page__checkout">
+                            <form id="checkout-form">
+                                <div class="form-group">
+                                    <label class="cart-form" for="name">Ім'я</label>
+                                    <input class="cart__input" type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="cart-form" for="phone">Телефон</label>
+                                    <input class="cart__input" type="tel" id="phone" name="phone" required placeholder="+38">
+                                </div>
+                                <div class="form-group">
+                                    <label class="cart-form" for="address">Адреса доставки</label>
+                                    <textarea class="cart__input" id="address" name="address" required></textarea>
+                                </div>
+                                <button type="submit" class="button button--primary">Оформити замовлення</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <section class="about">
+                    <div class="about__container">
+                        <div class="about__delivery">
+                            <div class="about__item">
+                                <h3 class="about__subtittle">Доставка</h3>
+                                <p class="about__text">
+                                    Доставка замовлень здійснюється будь-яким зручним для вас 
+                                    способом: - транспортними компаніями НОВА ПОШТА, DELIVERY, 
+                                    SAT (за індивідуальними корпоративними тарифами) та кур'єром 
+                                    по місту. Відправлення товару в день замовлення 
+                                    (якщо замовлення було оформлене до 16:00)
+                                </p>
+                            </div>
+
+                            <div class="about__item">
+                                <h3 class="about__subtittle">Оплата</h3>
+                                <p class="about__text">
+                                    Оплата замовлень здійснюється двома способами
+                                </p>
+                                <p class="about__text">
+                                    1. Оплата при отриманні (накладний платіж за тарифами транспортної компанії) 
+                                </p>
+                                <p class="about__text">
+                                    2. Безготівкова оплата на карту чи рахунок (банківську комісію сплачує отримувач)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about__delivery">
+                            <div class="about__item about__item--social">
+                                <h3 class="about__subtittle">Контакти</h3>
+                                <div class="about__social">
+                                    <div class="call">
+                                        <a 
+                                        href="tel:+1 234 555-55-55" 
+                                        class="icon icon__about"
+                                        >
+                                        <img class="icon__about" src="./image/icon/phone-ringing.png" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="instagram">
+                                        <a 
+                                        href="https://www.instagram.com" 
+                                        class="icon icon__about"
+                                        >
+                                        <img class="icon__about" src="./image/icon/instagram.png" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="telegram">
+                                        <a 
+                                        href="https://t.me/+xn-v9mnxZog4ZDYy" 
+                                        class="icon icon__about"
+                                        >
+                                        <img class="icon__about" src="./image/icon/telegram.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </div>
+    <script src="./script/main.js"></script>
+</body>
+</html>

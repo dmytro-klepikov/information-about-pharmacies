@@ -1,0 +1,9 @@
+
+.catalog {
+   margin-bottom: 40px;
+}
+
+.catalog__button {
+   max-width: 50%;
+   margin: 0 auto;
+}

@@ -1,0 +1,16 @@
+.order__title {
+   text-align: center;
+   color: #7ab2d3;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 22px;
+   margin-bottom: 10px;
+}
+
+.order__text {
+   text-align: center;
+   color: #7ab2d3;
+   font-weight: 500;
+   font-size: 22px;
+   margin-bottom: 30px;
+}

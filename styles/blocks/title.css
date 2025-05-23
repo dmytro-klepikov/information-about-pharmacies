@@ -1,0 +1,41 @@
+.title {
+   font-size: 48px;
+   line-height: 1;
+   color: #7ab2d3;
+   text-align: center;
+   letter-spacing: -1.5px;
+}
+
+.tittle-catalog {
+   margin-bottom: 50px;
+}
+
+.title-bottom {
+   padding-bottom: 10px;
+   border-bottom: 2px solid #7ab2d3;
+}
+
+@media (max-width: 767px) {
+   .title {
+      font-size: 32px;
+   }
+}
+
+.title--header {
+   margin-bottom: 40px;
+}
+
+.title--subtitle {
+   font-size: 36px;
+   line-height: 1;
+   color: #7ab2d3;
+   text-align: center;
+   letter-spacing: -1.5px;
+   margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+   .title--subtitle {
+      font-size: 24px;
+   }
+}

@@ -1,0 +1,19 @@
+.icon {
+    position: relative;
+    z-index: 0;
+    display: block;
+    text-decoration: none;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon__about {
+    width: 24px;
+    height: 24px;
+}
+
+.icon:hover {
+   transform: scale(1.4);
+   transition: all 0.3s ease;
+}

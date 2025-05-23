@@ -1,0 +1,329 @@
+/* Стилізація кнопок міні корзини*/
+.cart-item__quantity {
+   display: flex;
+   align-items: center;
+   text-align: center;
+}
+
+.quantity-controls {
+   display: flex;
+   align-items: center;
+   margin-left: 10px;   
+}
+      .quantity-decrease, .quantity-increase {
+        width: 20px;
+        height: 20px;
+        background: #f0f0f0;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 14px;
+        line-height: 1;
+        margin: 0 5px;
+      }
+      .quantity-value {
+        min-width: 20px;
+        text-align: center;
+      }
+
+/*Стилізація сторінки корзини*/
+.cart-page {
+padding: 20px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.cart-page__items {
+   margin-bottom: 20px;
+}
+
+.cart-page-title {
+color: #7ab2d3;
+font-size: 32px;
+font-weight: bold;
+text-align: center;
+margin: 30px 0;
+padding-bottom: 15px;
+border-bottom: 2px solid #7ab2d3;
+}
+
+.cart-page-list {
+list-style: none;
+padding: 0;
+margin: 0;
+background: #dff2Eb;
+border-radius: 12px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
+}
+
+.cart-page-item {
+   display: flex;
+   align-items: center;
+   background-color: #dff2Eb;
+   justify-content: space-between;
+   padding: 20px;
+   position: relative;
+}
+
+.cart-page-item__image {
+   width: 80px;
+   height: 80px;
+   flex-shrink: 0;
+   margin-right: 15px;
+}
+
+.cart-page-item__image img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.cart-page-item__details {
+   flex: 1;
+   }
+
+.cart-page-item__content {
+display: flex;
+align-items: center;
+gap: 20px;
+flex: 1;
+}
+
+
+.cart-page-item__name {
+color: #7ab2d3;
+font-size: 18px;
+font-weight: 600;
+margin: 0 0 8px;
+}
+
+.cart-page-item__volume {
+color: #7ab2d3;
+font-size: 14px;
+margin: 0 0 8px;
+}
+
+.cart-page-item__price {
+color: #7ab2d3;
+font-weight: 700;
+font-size: 18px;
+margin-bottom: 5px;
+}
+
+.cart-page-item__actions {
+   flex-shrink: 0;
+   margin-left: auto;
+}
+
+.cart-item__remove {
+   position: absolute;
+   top: 39%;
+   right: 2%;
+   background: none;
+   border: none;
+   color: #7ab2d3;
+   font-size: 24px;
+   cursor: pointer;
+   padding: 5px;
+   transition: color 0.3s ease;
+   display: inline-block;
+   line-height: 1;
+}
+
+@media (max-width: 576px) {
+   .cart-item__remove {
+      top: 65px;
+   }
+}
+
+.cart-item__remove:hover {
+color: #4a628a;
+}
+
+.cart-item__remove:focus {
+   outline: none;
+}
+
+.cart-item__quantity {
+   color: #7ab2d3;
+   font-size: 18px;
+   font-weight: 600;
+}
+
+.cart-page-item__quantity {
+   justify-content: space-between;
+   display: flex;
+   align-items: center;
+   text-align: center;
+}
+
+.cart-page-item__quantity span {
+   color: #7ab2d3;
+   font-weight: 700;
+   font-size: 18px;
+   margin-bottom: 5px;
+}
+
+.cart-page__summary {
+   background: #dff2Eb;
+   padding: 20px;
+   border-radius: 8px;
+   height: fit-content;
+}
+
+.quantity-decrease {
+   color: #7ab2d3;
+   transition: all 0.3s;
+}
+
+.quantity-decrease:hover {
+   color: #4a628a;
+   transition: all 0.3 s;
+}
+
+.quantity-increase {
+   color: #7ab2d3;
+   transition: all;
+}
+
+.quantity-increase:hover {
+   color: #4a628a;
+}
+
+.cart-page__total {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: #7ab2d3;
+   font-size: 24px;
+   font-weight: 700;
+   margin-bottom: 20px;
+   padding-bottom: 15px;
+}
+
+.cart-empty-message {
+text-align: center;
+padding: 50px 20px;
+background: #dff2Eb;
+border-radius: 12px;
+margin: 20px 0;
+}
+
+.cart-empty-message p {
+font-size: 20px;
+color: #7ab2d3;
+margin-bottom: 20px;
+}
+
+/* Форма оформлення замовлення */
+.form-group {
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 25px;
+   align-items: center;
+}
+.cart-form {
+   display: block;
+   color: #7ab2d3;
+   font-size: 24px;
+   font-weight: 500;
+   margin-right: 10px;
+}
+
+.cart__input {
+   box-sizing: border-box;
+   display: block;
+   width: 100%;
+   background-color: #b9e5e8;
+   border-radius: 8px;
+   border: 2px solid transparent;
+   height: 48px;
+   padding: 14px 16px;
+   color: #4a628a;
+}
+
+.cart__input::placeholder {
+   font-size: 24px;
+   line-height: 20px;
+   color: #7ab2d3;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+border-color: #7ab2d3;
+outline: none;
+}
+
+/* Стилі для порожньої корзини */
+.cart-empty-message {
+   text-align: center;
+   padding: 40px 20px;
+   border-bottom: 2px solid #7ab2d3;
+}
+
+.cart-empty-message p {
+   margin-bottom: 30px;
+   font-size: 18px;
+   color: #7ab2d3;
+}
+
+
+/* Адаптивність */
+@media (max-width: 576px) {
+   .cart-page-item {
+       flex-direction: column;
+       align-items: flex-start;
+   }
+   
+   .cart-page-item__image {
+       margin-bottom: 10px;
+   }
+   
+   .cart-page-item__actions {
+       position: absolute;
+       top: 15px;
+       right: 0;
+   }
+}
+
+.cart-clear-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ 
+   box-sizing: border-box;
+   width: 100%;
+   height: 56px;
+   border: 2px solid #7ab2d3;
+   border-radius: 8px;
+ 
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 14px;
+   text-decoration: none;
+   color: #fff;
+   background-color: #7ab2d3;
+   margin-bottom: 30px;
+ 
+   cursor: pointer;
+   transition: all 0.3s;
+}
+
+.cart-clear-button:hover {
+   color: #fff;
+   border-color: #4a628a;
+   background-color: #4a628a;
+   box-shadow: 0 13px 27px rgba(51, 138, 236, 0.46);
+   border-radius: 8px;
+}
+
+.cart-clear-button:active {
+   background-color: #005ecc;
+   border-color: #005ecc;
+   box-shadow: 0 8px 14px rgba(0, 83, 181, 0.48);
+}

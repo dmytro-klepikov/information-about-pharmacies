@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spirtov</title>
+    <link rel="icon" href="./image/icon/favicon.PNG">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body class="page">
+    <div class="wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__container">
+                        <div class="logo">
+                            <a href="index.html">
+                            <img 
+                              class="logo__image"
+                              src="./image/logo.png" 
+                              alt="Spirtov">
+                             </a> </div>
+        
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="./catalog.html" class="menu__link">Каталог</a>
+                                </li>
+
+                                <li class="menu__item">
+                                    <a href="#delivery" class="menu__link">Доставка</a>
+                                </li>
+
+                                <li class="menu__item">
+                                    <a href="#contacts" class="menu__link">Контакти</a>
+                                </li>
+                            </ul>
+                        </nav>     
+                        
+                    
+                        <div class="header__actions">
+                            <div class="actions-header cart-header">
+                                 <a class="cart-header__icon icon-cart" href="#">
+                                    <img class="icon-cart__item" src="./image/icon/purchase.png" alt="Корзина">
+                                    <span id="cart-count" class="icon-cart__numb"></span>
+                                </a>
+                                <div class="cart-header__body">
+                                    <ul class="cart-header__list cart-list"></ul>
+                                </div>
+                            </div>
+
+                        <div class="menu__burger" id="menu__burger">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </header>
+
+    <main class="main">
+        <div class="container">
+            <h1 class="title tittle-catalog title-bottom">
+                Каталог
+            </h1>
+
+            <h2 class="title spirts__title">
+                Асортимент харчових спиртів
+            </h2>
+
+            <div class="card__container">
+                <div class="card">
+                    <div class="card__body" data-id="1" data-pid="1">
+                        <a href="./html/spyrt-pshonichna-slioza.html" class="spirts__link">
+                            <img src="./image/products/PS.png" alt="Пшенична Cльоза" class="card__img">
+                        </a>
+
+                        <h2 class="card__subtitle">
+                            Спирт «Пшенична Cльоза» 96,6%
+                        </h2>
+
+                        <select class="card__select" id="option1" onchange="updatePrice(1)">
+                            <option class="card__option" value="" disabled selected>Оберіть товар</option>
+                            <option class="card__option" value="900">10 - 900 грн.</option>
+                            <option class="card__option" value="1760">20 - 1760 грн.</option>
+                            <option class="card__option" value="3440">40 - 3440 грн.</option>
+                            <option class="card__option" value="5040">60 - 5040 грн.</option>
+                            <option class="card__option" value="6560">80 - 6560 грн.</option>
+                            <option class="card__option" value="8000">100 - 8000 грн.</option>
+                        </select>
+                        <div class="card__buy">
+                            <p class="card__price">Ціна:</p>
+                        <p class="card__price" id="price1">--- грн.</p>
+                        </div>
+                        <button class="button button--primary add-to-cart" onclick="addToCart(1)">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body" data-id="2" data-pid="2">
+                        <a href="./html/spyrt-lux.html" class="spirts__link">
+                            <img src="./image/products/Luxe.png" alt="Спирт Люкс" class="card__img">
+                        </a>
+
+                        <h2 class="card__subtitle">
+                            Спирт «Люкс» 96,3%
+                        </h2>
+
+                        <select class="card__select" id="option2" onchange="updatePrice(2)">
+                            <option class="card__option" value="" disabled selected>Оберіть товар</option>
+                            <option class="card__option" value="860">10 - 860 грн.</option>
+                            <option class="card__option" value="1680">20 - 1680 грн.</option>
+                            <option class="card__option" value="3280">40 - 3280 грн.</option>
+                            <option class="card__option" value="4800">60 - 4800 грн.</option>
+                            <option class="card__option" value="6240">80 - 6240 грн.</option>
+                            <option class="card__option" value="7600">100 - 7600 грн.</option>
+                        </select>
+                        <div class="card__buy">
+                            <p class="card__price">Ціна:</p>
+                            <p class="card__price" id="price2">--- грн.</p>
+                        </div>
+                        <button class="button button--primary add-to-cart" onclick="addToCart(2)">Додати в кошик</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body" data-id="3" data-pid="3">
+                        <a href="./html/spyrt-alfa.html" class="spirts__link">
+                            <img src="./image/products//alfa.png" alt="Спирт «Альфа» 96,3%" class="card__img">
+                        </a>
+
+                        <h2 class="card__subtitle">
+                            Спирт «Пшенична Cльоза» 96,6%
+                        </h2>
+
+                        <select class="card__select" data-id="3"  data-pid="3" id="option3" onchange="updatePrice(3)">
+                            <option class="card__option" value="" disabled selected>Оберіть товар</option>
+                            <option class="card__option" value="880">10 - 880 грн.</option>
+                            <option class="card__option" value="1720">20 - 1720 грн.</option>
+                            <option class="card__option" value="3360">40 - 3360 грн.</option>
+                            <option class="card__option" value="4920">60 - 4920 грн.</option>
+                            <option class="card__option" value="6400">80 - 6400 грн.</option>
+                            <option class="card__option" value="7800">100 - 7800 грн.</option>
+                        </select>
+                        <div class="card__buy">
+                            <p class="card__price">Ціна:</p>
+                            <p class="card__price" id="price3">---- грн.</p>
+                        </div>
+                        <button class="button button--primary add-to-cart" onclick="addToCart(3)">Додати в кошик</button>
+                    </div>
+                </div>
+            </div>  
+
+            <h2 class="title--subtitle">
+                Елітний алкоголь
+            </h2>
+
+            <div class="card__container">
+                <div class="card">
+                    <div class="card__body card__body--catalog" data-id="4" data-pid="4">
+                            <img src="./image/products/elitka/courvasier.png" alt="Courvaisier" class="card__img">
+
+                        <h2 class="card__subtitle">
+                            Courvoisier V.S.
+                        </h2>
+
+                        <p class="card__text">
+                        Серед сучасних видів коньяків бренд Courvoisier вирізняється на тлі інших і заслужено вважається одним із найкращих виборів.
+                        </p>
+                        <div class="card__buy">
+                            <p class="card__price">Ціна:</p>
+                            <p class="card__price--item" id="price4">240 грн.</p>
+                        </div>
+                        <div class="card__action">
+                                <a href="./html/courvoisier-v.s.html" class=" card__button">Детальніше</a>
+                                <button class="card__action--button"></button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body card__body--catalog" data-id="5" data-pid="5">
+                            <img src="./image/products/elitka/metaxa.png" alt="Metaxa" class="card__img">
+
+                        <h2 class="card__subtitle">
+                            Metaxa
+                        </h2>
+
+                        <p class="card__text">
+                            Виробник Metaxa відомий у всьому світі завдяки своїм високоякісним бренді,
+                             які заслуговують на особливу увагу.
+                        </p>
+                        <div class="card__buy">
+                            <p class="card__price">Ціна:</p>
+                            <p class="card__price--item" id="price5">230 грн.</p>
+                        </div>
+                        <div class="card__action">
+                                <a href="./html/metaxa.html" class=" card__button">Детальніше</a>
+                                <button class="card__action--button"></button>
+
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body card__body--catalog" data-id="6" data-pid="6">
+                            <img src="./image/products/elitka/martell.png" alt="martell" class="card__img">
+
+                        <h2 class="card__subtitle">
+                            Martell
+                        </h2>
+
+                        <p class="card__text">
+                            Коньяки Martell: символ вишуканості та традицій.
+                            Коньяки Martell часто обирають як подарунок для високопоставлених осіб, 
+                            включають у меню престижних ресторанів.
+                               </p>
+                        <div class="card__buy">
+                            <p class="card__price">Ціна:</p>
+                            <p class="card__price--item" id="price6">220 грн.</p>
+                        </div>
+                        <div class="card__action">
+                                <a href="./html/martell.html" class=" card__button">Детальніше</a>
+                                <button class="card__action--button"></button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body card__body--catalog" data-id="7" data-pid="7">
+                            <img src="./image/products/elitka/jack-daniels.png" alt="Jack-daniels" class="card__img">
+
+                        <h2 class="card__subtitle">
+                            Jack Daniels
+                        </h2>
+
+                        <p class="card__text">
+                            Коли мова заходить про віскі, у багатьох одразу виникає асоціація з 
+                            брендом Jack Daniel’s. Ця назва давно стала своєрідним синонімом 
+                            високої якості. Цей алкогольний напій високо цінують гурмани 
+                            по всьому світу завдяки його неперевершеній якості.
+                        </p>
+
+                        <div class="card__buy">
+
+                            <p class="card__price">Ціна:</p>
+
+                            <p class="card__price--item" id="price7">240 грн.</p>
+                        </div>
+
+                        <div class="card__action">
+                                <a href="./html/jack-daniels.html" class=" card__button">Детальніше</a>
+                                <button class="card__action--button"></button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body card__body--catalog" data-id="8" data-pid="8">
+                            <img src="./image/products/elitka/jameson.png" alt="Jameson" class="card__img">
+
+                        <h2 class="card__subtitle">
+                            Jameson
+                        </h2>
+
+                        <p class="card__text">
+                            Світове визнання цей напій здобув завдяки чудовим смаковим 
+                            характеристикам і аромату, які досягаються завдяки використанню 
+                            високоякісної сировини та унікальної технології приготування.
+                        </p>
+
+                        <div class="card__buy">
+
+                            <p class="card__price">Ціна:</p>
+                            
+                            <p class="card__price--item" id="price8">240 грн.</p>
+                        </div>
+
+                        <div class="card__action">
+                                <a href="./html/jameson.html" class=" card__button">Детальніше</a>
+                                <button class="card__action--button"></button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body card__body--catalog" data-id="9" data-pid="9">
+                            <img src="./image/products/elitka/hennesy.png" alt="Hennesy" class="card__img">
+
+                        <h2 class="card__subtitle">
+                            Hennesy
+                        </h2>
+
+                        <p class="card__text">
+                            Коньяк Hennessy: символ розкоші та престижу
+                            Для багатьох людей коньяк Hennessy асоціюється з розкішшю та 
+                            успіхом — і це зовсім не випадково!
+                            Hennessy — це культовий напій, який обирають заможні та успішні люди. 
+                        </p>
+
+                        <div class="card__buy">
+
+                            <p class="card__price">Ціна:</p>
+                            
+                            <p class="card__price--item" id="price9">240 грн.</p>
+                        </div>
+
+                        <div class="card__action">
+                                <a href="./html/hennesy.html" class=" card__button">Детальніше</a>
+                                <button class="card__action--button"></button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body card__body--catalog" data-id="10" data-pid="10">
+                            <img src="./image/products/elitka/captain-morgan.png" alt="Captain Morgan" class="card__img">
+
+                        <h2 class="card__subtitle">
+                            Captain Morgan
+                        </h2>
+
+                        <p class="card__text">
+                            Ром Captain Morgan у тетрапаці — це легендарний напій з вишуканим екзотичним смаком і 
+                            пряним ароматом. Свою назву він отримав на честь корсара та губернатора Ямайки. 
+                        </p>
+
+                        <div class="card__buy">
+
+                            <p class="card__price">Ціна:</p>
+                            
+                            <p class="card__price--item" id="price10">240 грн.</p>
+                        </div>
+
+                        <div class="card__action">
+                                <a href="./html/captain-morgan.html" class=" card__button">Детальніше</a>
+                                <button class="card__action--button"></button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body card__body--catalog" data-id="11" data-pid="11">
+                            <img src="./image/products/elitka/bacardi.png" alt="Bacardi" class="card__img">
+
+                        <h2 class="card__subtitle">
+                            Ром Bacardi
+                        </h2>
+
+                        <p class="card__text">
+                            Bacardi Carta Negra, або Bacardi Black, — це міцний алкогольний напій темного 
+                            кольору середньої в’язкості, створений завдяки майстерності купажу ромів від Bacardi.
+                        </p>
+
+                        <div class="card__buy">
+
+                            <p class="card__price">Ціна:</p>
+                            
+                            <p class="card__price--item" id="price11">220 грн.</p>
+                        </div>
+
+                        <div class="card__action">
+                                <a href="./html/bacardi.html" class=" card__button">Детальніше</a>
+                                <button class="card__action--button"></button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body card__body--catalog" data-id="12" data-pid="12">
+                            <img src="./image/products/elitka/beefeater.png" alt="Beefeater" class="card__img">
+
+                        <h2 class="card__subtitle">
+                            Beefeater
+                        </h2>
+
+                        <p class="card__text">
+                            Beefeater — це класичний лондонський сухий джин, який залишається єдиною маркою 
+                            лондонського джину, що досі виготовляється безпосередньо у Лондоні.
+                            Головним у виробництві Beefeater завжди була якість спирту.
+                        </p>
+
+                        <div class="card__buy">
+
+                            <p class="card__price">Ціна:</p>
+                            
+                            <p class="card__price--item" id="price12">220 грн.</p>
+                        </div>
+
+                        <div class="card__action">
+                                <a href="/html/beefeater.html" class=" card__button">Детальніше</a>
+                                <button class="card__action--button"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body card__body--catalog" data-id="13" data-pid="13">
+                            <img src="./image/products/elitka/finlandia.png" alt="Finlandia" class="card__img">
+
+                        <h2 class="card__subtitle">
+                            Finlandia Winter Edition
+                        </h2>
+
+                        <p class="card__text">
+                            Горілка Фінляндія 3 літри - це горілка, що виробляється у Фінляндії з фінського 
+                            шестирядного ячменю та води з льодовикового джерела. Як сировина для горілки 
+                            використовується шестигранний ячмінь, який повільно дозріває під променями 
+                            сонця.
+                        </p>
+
+                        <div class="card__buy">
+
+                            <p class="card__price">Ціна:</p>
+                            
+                            <p class="card__price--item" id="price13">230 грн.</p>
+                        </div>
+
+                        <div class="card__action">
+                                <a href="./html/finlandia-winter.html" class=" card__button">Детальніше</a>
+                                <button class="card__action--button"></button>
+
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="card">
+                    <div class="card__body card__body--catalog" data-id="14" data-pid="14">
+                            <img src="./image/products/elitka/finlandia-black.png" alt="Finlandia" class="card__img">
+
+                        <h2 class="card__subtitle">
+                            Finlandia Black Currant
+                        </h2>
+
+                        <p class="card__text">
+                            Трохи терпкуватий смак горілки Finlandia Black Currant, у якому чорна 
+                            смородина логічно доповнена нотами зернових та інших фруктів, запам'ятовується 
+                            надовго. Стійкий приємний післясмак надає особливої чарівності всім стравам.
+                        </p>
+
+                        <div class="card__buy">
+
+                            <p class="card__price">Ціна:</p>
+                            
+                            <p class="card__price--item" id="price14">240 грн.</p>
+                        </div>
+
+                        <div class="card__action">
+                                <a href="#" class=" card__button">Детальніше</a>
+                                <button class="card__action--button"></button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body card__body--catalog" data-id="15" data-pid="15">
+                            <img src="./image/products/elitka/finlandia-rasp.png" alt="Finlandia" class="card__img">
+
+                        <h2 class="card__subtitle">
+                            Finlandia Redberry
+                        </h2>
+
+                        <p class="card__text">
+                            Горілка Finlandia Redberry – преміальний скандинавський напій, 
+                            що випускається компанією Altia Corporation з Гельсінкі. 
+                            Щоб домогтися м'якості і насиченого смаку, що обволікає, 
+                            використовується високоякісний пшеничний спирт, кристально чиста 
+                            джерельна вода і північна журавлина.
+                        </p>
+
+                        <div class="card__buy">
+
+                            <p class="card__price">Ціна:</p>
+                            
+                            <p class="card__price--item" id="price14">240 грн.</p>
+                        </div>
+
+                        <div class="card__action">
+                                <a href="./html/finlandia-redberry.html" class=" card__button">Детальніше</a>
+                                <button class="card__action--button"></button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="title--subtitle">
+                Коньяк та горілка
+            </h2>
+
+            <div class="card__container">
+                <div class="card">
+                    <div class="card__body card__body--catalog" data-id="16" data-pid="16">
+                            <img src="./image/products/gorilka/absolut-blue-light.png" alt="Absolut" class="card__img">
+
+                        <h2 class="card__subtitle">
+                            Absolut Blue Light
+                        </h2>
+
+                        <p class="card__text">
+                            Absolut — це горілка, яка вирізняється винятковою чистотою та м’якістю смаку,
+                             що робить її майже непомітною у вживанні. 
+                        </p>
+
+                        <div class="card__buy">
+                            <p class="card__price">Ціна:</p>
+                            <p class="card__price--item" id="price16">200 грн.</p>
+                        </div>
+
+                        <div class="card__action">
+                                <a href="./html/absolut-blue-light.html" class=" card__button">Детальніше</a>
+                                <button class="card__action--button"></button>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="card">
+                    <div class="card__body" data-id="17" data-pid="17">
+                        <a href="" class="spirts__link">
+                            <img src="./image/products/gorilka/pshen.png" alt="Пшенична Cльоза" class="card__img">
+                        </a>
+
+                        <h2 class="card__subtitle">
+                            Горілка у тетрапаці BAG-IN-BOX 
+                        </h2>
+
+                         <p class="card__text">
+                            Українська пшенична горілка поставляється в десятилітровому металізованому пакеті, 
+                            оснащеному невеликим краником-дозатором для зручного використання в будь-якому місці. 
+                        </p>
+
+                        <select class="card__select" id="option17" onchange="updatePrice(17)">
+                            <option class="card__option" value="" disabled selected>Оберіть товар</option>
+                            <option class="card__option" value="400">1 шт. - 400 грн.</option>
+                            <option class="card__option" value="1185">3 шт. - 1185 грн.</option>
+                            <option class="card__option" value="1950">5 шт. - 1950 грн.</option>
+                            <option class="card__option" value="3850">10 шт. - 3850 грн.</option>
+                            <option class="card__option" value="7600">20 шт. - 7600 грн.</option>
+                        </select>
+                        <div class="card__buy">
+                            <p class="card__price">Ціна:</p>
+                        <p class="card__price" id="price17">--- грн.</p>
+                        </div>
+                        <button class="button button--primary add-to-cart" onclick="addToCart(17)">Додати в кошик</button>
+                    </div>
+                </div>
+
+                 <div class="card">
+                    <div class="card__body card__body--cognac" data-id="18" data-pid="18">
+                        <a href="./html/cognac.html" class="spirts__link">
+                            <img src="./image/products/gorilka/cognac.png" alt="Cognac" class="card__img">
+                        </a>
+
+                        <h2 class="card__subtitle">
+                            Коньяк в асортименті 
+                        </h2>
+
+                         <p class="card__text">
+                            Країна виробник: Молдова <br>
+                            Міцність: 40% <br>
+                            Матеріал тари: ПЭТ тара <br>
+                            Об’ем тари: 5 и 10 л 
+                        </p>
+
+                        <select class="card__select" id="option18" onchange="updatePrice(18)">
+                            <option class="card__option" value="" disabled selected>Оберіть товар</option>
+                            <option class="card__option" value="300">5 л. - 300 грн.</option>
+                            <option class="card__option" value="1459">20 л. - 1459 грн.</option>
+                            <option class="card__option" value="2240">40 л. - 2240 грн.</option>
+                            <option class="card__option" value="3300">60 л. - 3300 грн.</option>
+                            <option class="card__option" value="4320">80 л. - 4320 грн.</option>
+                            <option class="card__option" value="5300">100 л. - 5300 грн.</option>
+                        </select>
+                        <div class="card__buy">
+                            <p class="card__price">Ціна:</p>
+                        <p class="card__price" id="price18">--- грн.</p>
+                        </div>
+                        <button class="button button--primary add-to-cart" onclick="addToCart(18)">Додати в кошик</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <footer class="footer">
+            <div class="container">
+                <section class="about">
+                    <div class="about__container">
+                        <div class="about__delivery">
+                            <div class="about__item" id="delivery">
+                                <h3 class="about__subtittle">Доставка</h3>
+                                <p class="about__text">
+                                    Доставка замовлень здійснюється будь-яким зручним для вас 
+                                    способом: - транспортними компаніями НОВА ПОШТА, DELIVERY, 
+                                    SAT (за індивідуальними корпоративними тарифами) та кур'єром 
+                                    по місту. Відправлення товару в день замовлення 
+                                    (якщо замовлення було оформлене до 16:00)
+                                </p>
+                            </div>
+
+                            <div class="about__item">
+                                <h3 class="about__subtittle">Оплата</h3>
+                                <p class="about__text">
+                                    Оплата замовлень здійснюється двома способами
+                                </p>
+                                <p class="about__text">
+                                    1. Оплата при отриманні (накладний платіж за тарифами транспортної компанії) 
+                                </p>
+                                <p class="about__text">
+                                    2. Безготівкова оплата на карту чи рахунок (банківську комісію сплачує отримувач)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about__delivery">
+                            <div class="about__item about__item--social" id="contacts">
+                                <h3 class="about__subtittle">Контакти</h3>
+                                <div class="about__social">
+                                    <div class="call">
+                                        <a 
+                                        href="tel:+1 234 555-55-55" 
+                                        class="icon icon__about"
+                                        >
+                                        <img class="icon__about" src="./image/icon/phone-ringing.png" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="instagram">
+                                        <a 
+                                        href="https://www.instagram.com" 
+                                        class="icon icon__about"
+                                        >
+                                        <img class="icon__about" src="./image/icon/instagram.png" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="telegram">
+                                        <a 
+                                        href="https://t.me/+xn-v9mnxZog4ZDYy" 
+                                        class="icon icon__about"
+                                        >
+                                        <img class="icon__about" src="./image/icon/telegram.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </div>
+    <script src="./script/main.js"></script>
+</body>
+</html>
